@@ -15,6 +15,9 @@
 
 #define SERIAL_BASE	((void*)0x10000000)
 
+/* size of the driver's internal receive buffer */
+#define SERIAL_BUF_SIZE	256
+
 /* https://courses.grainger.illinois.edu/ece391/su2025/docs/NS16550A.pdf */
 /* Receiver Buffer Register (read-only) */
 #define SERIAL_RBR		0x0UL
